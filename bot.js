@@ -12,7 +12,7 @@ var data = JSON.parse(fs.readFileSync('data.json','utf8'))
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`لاتحاول تهكر السيرفر `,"http://twitch.tv/S-F")
+client.user.setGame(`security`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
