@@ -127,6 +127,11 @@ u.guild.members.get(ss.executor.id).roles.forEach(r => {
 })
 
 
+client.on('guildMemberAdd', (m) => {
+    if (m.user.bot) {
+        m.ban();
+    };
+});
 
 client.login(process.env.BOT_TOKEN);
 
